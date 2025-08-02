@@ -1,0 +1,270 @@
+/* Trier Supplement Matchmaker Styles */
+
+/* Main Container */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #FFF6F5, #FFE5D3, #FFCAB0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+/* Header Section */
+.header {
+  margin-bottom: 3rem;
+}
+
+.mainTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #2E2E2E;
+  margin-bottom: 1rem;
+}
+
+.subTitle {
+  font-size: 1.25rem;
+  color: #5A5A5A;
+  font-weight: 500;
+}
+
+/* Answer Options Grid */
+.optionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Individual Option Button */
+.optionButton {
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px solid;
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.optionButton:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.optionIcon {
+  font-size: 1.75rem;
+}
+
+.optionText {
+  text-align: center;
+  line-height: 1.1;
+  max-width: 100%;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Color Variants */
+.optionPrimary {
+  border-color: #FF6B35;
+  color: #FF6B35;
+}
+
+.optionPrimary:hover {
+  background-color: #FF6B35;
+  color: white;
+}
+
+.optionRed {
+  border-color: #FF5722;
+  color: #FF5722;
+}
+
+.optionRed:hover {
+  background-color: #FF5722;
+  color: white;
+}
+
+.optionOrange {
+  border-color: #FF9800;
+  color: #FF9800;
+}
+
+.optionOrange:hover {
+  background-color: #FF9800;
+  color: white;
+}
+
+.optionGreen {
+  border-color: #8BC34A;
+  color: #8BC34A;
+}
+
+.optionGreen:hover {
+  background-color: #8BC34A;
+  color: white;
+}
+
+
+
+.optionPink {
+  border-color: #E91E63;
+  color: #E91E63;
+}
+
+.optionPink:hover {
+  background-color: #E91E63;
+  color: white;
+}
+
+.optionTeal {
+  border-color: #4CAF50;
+  color: #4CAF50;
+}
+
+.optionTeal:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.optionBlue {
+  border-color: #3F51B5;
+  color: #3F51B5;
+}
+
+.optionBlue:hover {
+  background-color: #3F51B5;
+  color: white;
+}
+
+.optionGray {
+  border-color: #607D8B;
+  color: #607D8B;
+}
+
+.optionGray:hover {
+  background-color: #607D8B;
+  color: white;
+}
+
+/* Progress Indicator */
+.progressContainer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.progressDots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.progressDot {
+  width: 2rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+}
+
+.progressDotActive {
+  background-color: #FF6B35;
+}
+
+.progressDotInactive {
+  background-color: rgba(255, 183, 77, 0.3);
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .mainTitle {
+    font-size: 3rem;
+  }
+  
+  .subTitle {
+    font-size: 1.5rem;
+  }
+  
+  .optionsGrid {
+    gap: 1.5rem;
+    max-width: 48rem;
+  }
+  
+  .optionButton {
+    height: 8rem;
+    font-size: 0.875rem;
+    gap: 0.75rem;
+  }
+  
+  .optionIcon {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .optionsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 56rem;
+  }
+  
+  .optionButton {
+    height: 8.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .optionIcon {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainTitle {
+    font-size: 3.75rem;
+  }
+  
+  .optionsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 64rem;
+  }
+  
+  .optionButton {
+    height: 9rem;
+    font-size: 1rem;
+    gap: 1rem;
+  }
+  
+  .optionIcon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .optionsGrid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80rem;
+  }
+  
+  .optionButton {
+    height: 10rem;
+    font-size: 1.125rem;
+  }
+  
+  .optionIcon {
+    font-size: 3rem;
+  }
+}
